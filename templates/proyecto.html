@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación - Tienda de Bolsos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Cinzel:wght@400..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Permanent+Marker&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos personalizados */
+        body {
+            font-family: 'Nunito', sans-serif; /* Aplicar Nunito a todo el documento */
+        }
+        .background-image {
+            background-image: url('static/WhatsApp Image 2024-05-27 at 22.24.38.jpeg'); /* Reemplaza con tu URL de imagen */
+            background-size: cover;
+            background-position: center;
+            height: 300px; /* Ajusta la altura según tus necesidades */
+            position: relative;
+        }
+        .background-brown {
+            background-color: #8B4513; /* Color marrón */
+            padding: 50px 0; /* Ajusta el padding según tus necesidades */
+            color: white; /* Color de texto blanco */
+            font-family: 'Cinzel', serif; /* Aplicar Cinzel */
+            text-align: center; /* Centrar texto */
+        }
+        .background-brown p {
+            margin: 0 auto; /* Margen automático para centrar */
+            max-width: 600px; /* Limitar el ancho máximo */
+        }
+        .title-container {
+            position: absolute;
+            top: 70%; /* Ajusta este valor para mover el título más abajo */
+            left: 50%; /* Ajusta el porcentaje para centrar el título */
+            transform: translate(-50%, -50%);
+            text-align: center;
+            z-index: 1; /* Para que esté delante de la imagen de fondo */
+        }
+        .title {
+            background-color: #8B4513; /* Color de fondo café */
+            color: white; /* Color de texto blanco */
+            padding: 20px 40px; /* Ajusta el padding según tus necesidades */
+            border-radius: 30px; /* Ajusta el radio del borde según tus necesidades */
+            font-weight: bold;
+            font-size: 36px; /* Tamaño de fuente más grande */
+            font-family: 'Roboto', sans-serif; /* Aplicar Roboto */
+        }
+        .cloud {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://image.flaticon.com/icons/png/512/53/53166.png'); /* Imagen de la nube */
+            background-size: contain;
+            background-repeat: no-repeat;
+            opacity: 0.7; /* Opacidad de la nube */
+            z-index: -1; /* Para que esté detrás del texto */
+        }
+        .separador {
+            height: 2px;
+            background-color: #8B4513; /* Color marrón */
+            margin: 40px auto; /* Espacio alrededor de la línea y centrado */
+            width: 90%; /* Aumentar el ancho de la línea */
+        }
+        .content-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0; /* Espacio arriba y abajo */
+            text-align: justify; /* Justificar texto */
+        }
+        .content-section div {
+            flex: 1;
+            padding: 20px;
+            max-width: 600px; /* Limitar el ancho máximo */
+        }
+        .content-section .left-section {
+            background-color: #f8f9fa;
+            color: #8B4513; /* Color marrón para el texto */
+            font-family: 'Cinzel', serif; /* Aplicar Cinzel */
+            border-right: 2px solid #8B4513; /* Línea divisoria */
+            text-align: center; /* Centrar texto del título */
+        }
+        .content-section .right-section {
+            background-color: #f8f9fa;
+            color: #333; /* Color de texto */
+            font-family: 'Nunito', sans-serif; /* Aplicar Nunito */
+        }
+        .content-section h2 {
+            font-family: 'Cinzel', serif; /* Aplicar Cinzel */
+            color: #8B4513; /* Color marrón */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Tienda de Bolsos</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/pokeapi">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Presentación</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/tienda">Tienda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/proyecto">Proyecto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/donaciones">Donaciones</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Imagen de fondo con título -->
+    <div class="background-image">
+        <div class="title-container">
+            <div class="title">Nuestra Historia</div>
+            <div class="cloud"></div>
+        </div>
+    </div>
+
+   <!-- Sección de historia con fondo café -->
+<div class="background-brown" style="text-align: justify;">
+    <div class="container">
+        <p>Hola, mi nombre es Tessha y soy la creadora de este proyecto.</p>
+        <p>El día de hoy les quiero contar todo acerca de este proyecto, pero primero empecemos con una pequeña historia de cómo se me ocurrió la idea principal de mi proyecto.</p>
+        <p>Todo empezó en mi cuarto para ser más específica en mi cama, estaba en las nubes pensando “¿Qué voy a hacer con mi vida?”.</p>
+    </div>
+</div>
+    <!-- Línea horizontal separadora -->
+    <div class="separador"></div>
+    <!-- Fin de la línea horizontal -->
+<!-- Sección de visión y misión -->
+<div class="container">
+    <div class="content-section">
+        <div class="left-section" style="background-color: white;">
+            <h2>Nuestra Visión y Misión</h2>
+        </div>
+        <div class="right-section" style="background-color: white;">
+            <h2>Misión:</h2>
+            <p>Perezosa’s tiene como misión principal ayudar a los niños a canalizar y transformar emociones negativas en experiencias positivas a través del arte. Nos esforzamos por proporcionar herramientas creativas, como kits de pintura, para que los niños puedan expresar sus emociones, descansar la mente y el cuerpo, y experimentar un sentido de felicidad y satisfacción. Nuestra misión incluye llevar alegría a niños en situaciones desafiantes mediante donativos y conversaciones que fomenten la comodidad y la conexión.</p>
+                
+            <h2>Visión:</h2>
+            <p>La visión de Perezosa’s es contribuir al bienestar emocional de los niños desde una edad temprana, reconociendo la importancia de la salud mental en su desarrollo. Buscamos ser un recurso integral que utiliza el arte como herramienta terapéutica, permitiendo a los niños aprender a manejar sus emociones y promoviendo la conciencia de la salud mental. Además, aspiramos a difundir la idea de que todos pueden aprender a expresarse a través del arte, cultivando paciencia, autoconocimiento y creatividad en los niños. A través de nuestro sitio web y productos, buscamos crear conciencia, ofrecer donaciones significativas y proporcionar oportunidades para que los niños exploren y comprendan el mundo a través del arte.</p>
+        </div>
+    </div>
+</div>
+    <!-- Bloque rectangular con botón -->
+<div class="background-brown text-center">
+    <div class="container">
+        <p>¿Listo para explorar nuestra tienda?</p>
+        <a href="/tienda" class="btn btn-light btn-lg">Ir a la tienda</a>
+    </div>
+</div>
+<!-- Bloque blanco con información de contacto -->
+<div class="container">
+    <div class="content-section">
+        <div class="left-section" style="background-color: white;">
+            <h2>Contacto</h2>
+        </div>
+        <div class="right-section" style="background-color: white;">
+            <p style="text-align: justify;">¡Gracias por tu interés en Perezosa's! Si deseas más información sobre nuestros productos o servicios, no dudes en ponerte en contacto con nosotros.</p>
+            <p style="text-align: justify;">Correo electrónico: info@perezosas.com</p>
+            <p style="text-align: justify;">Teléfono: +1 234 567 890</p>
+            <p style="text-align: justify;">O visita nuestra tienda en persona en la siguiente dirección:</p>
+            <p style="text-align: justify;">123 Calle Principal, Ciudad, País</p>
+        </div>
+    </div>
+</div>
+    <!-- Script de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

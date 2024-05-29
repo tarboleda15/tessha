@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Pokémon Imagen</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body class="bg-light text-dark">
+    <div class="container text-center py-5">
+        <h1>¡Busca la imagen de un Pokémon!</h1>
+        <form method="POST">
+            <input type="text" name="pokemon_name" placeholder="Nombre del Pokémon" required>
+            <button type="submit" class="btn btn-primary">Buscar</button>
+        </form>
+        {% if image_url %}
+            <div class="mt-3">
+                <img src="{{ image_url }}" alt="Imagen de Pokémon">
+            </div>
+        {% elif image_url is none %}
+            <p class="mt-3">Pokémon no encontrado. Intenta con otro nombre.</p>
+        {% endif %}
+    </div>
+</body>
+</html>

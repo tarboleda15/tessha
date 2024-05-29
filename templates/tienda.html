@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Bolsos - Presentación</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .card-img-top {
+            height: 200px; /* Ajusta la altura según tu preferencia */
+            object-fit: cover; /* Escalar la imagen para que cubra toda la caja */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Tienda de Bolsos</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/inicio">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Presentación</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/tienda">Tienda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/proyecto">Proyecto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/donaciones">Donaciones</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Nuestra Colección </h1>
+        <div class="row">
+            <div class="col-md-4">
+                <button class="btn btn-primary btn-block mb-3" onclick="filterBags('Andrómeda')">Bolsos Andrómeda</button>
+            </div>
+            <div class="col-md-4">
+                <button class="btn btn-primary btn-block mb-3" onclick="filterBags('Casiopea')">Bolsos Casiopea</button>
+            </div>
+            <div class="col-md-4">
+                <button class="btn btn-primary btn-block mb-3" onclick="filterBags('Lyra')">Bolsos Lyra</button>
+            </div>
+        </div>
+
+        <div class="row bags-row">
+            <div class="col-md-4 dibujos">
+                <div class="card mb-3">
+                    <img src="static/images/Bolsas.jpg" class="card-img-top" alt="Bolso 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Bolsos Andrómeda</h5>
+                        <p class="card-text">Descubre la libertad de expresión creativa y lleva contigo un accesorio único en cada salida con nuestros diseños exclusivos de caricaturas y animes.</p>
+                        <p class="card-text">Precio: $20</p>
+                        <a href="https://checkout.example.com?id=1" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 auroras">
+                <div class="card mb-3">
+                    <img src="static/images/Sorry not sorry!.jpg" class="card-img-top" alt="Bolso 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Bolsos Casiopea</h5>
+                        <p class="card-text">Descubre la libertad de expresión creativa y lleva contigo un accesorio único en cada salida con nuestros diseños exclusivos de tus dichos o frases favoritas.</p>
+                        <p class="card-text">Precio: $21</p>
+                        <a href="https://checkout.example.com?id=2" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 moderno">
+                <div class="card mb-3">
+                    <img src="static/images/descarga (3).jpg" class="card-img-top" alt="Bolso 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Bolso Lyra</h5>
+                        <p class="card-text">Crea un bolso que refleje tus gustos y pasiones con nuestros diseños exclusivos. ¡Descubre la libertad de expresión creativa y lleva contigo un accesorio único en cada salida!</p>
+                        <p class="card-text">Precio: $25</p>
+                        <a href="https://checkout.example.com?id=3" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botones de la nueva colección -->
+        <div class="row">
+            <div class="col-md-4">
+                <button class="btn btn-primary btn-block mb-3" onclick="filterBags('NuevaColeccion')">Nueva Colección</button>
+            </div>
+            <div class="col-md-4">
+                <button class="btn btn-primary btn-block mb-3" onclick="filterBags('Coleccion2')">Colección 2</button>
+            </div>
+            <div class="col-md-4">
+                <button class="btn btn-primary btn-block mb-3" onclick="filterBags('Coleccion3')">Colección 3</button>
+            </div>
+        </div>
+
+        <!-- Nueva colección -->
+        <div class="row bags-row Constelaciones Cosidas">
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <img src="static/images/descarga (4).jpg" class="card-img-top" alt="Nuevo Bolso 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Constelaciones Cosidas</h5>
+                        <p class="card-text">Descripción del nuevo bolso 1.</p>
+                        <p class="card-text">Precio: $XX</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <img src="static/images/🐱🐱🐱.jpg" class="card-img-top" alt="Nuevo Bolso 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Barro creativo</h5>
+                        <p class="card-text">Descripción del nuevo bolso 2.</p>
+                        <p class="card-text">Precio: $XX</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <img src="static/images/7861139832640-updtimgs-01-2024-1.jpg" class="card-img-top" alt="Nuevo ">
+                    <div class="card-body">
+                        <h5 class="card-title">Lienzos Estelares</h5>
+                        <p class="card-text">Descripción del nuevo bolso 3.</p>
+                        <p class="card-text">Precio: $XX</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fin de la nueva colección -->
+    </div>
+
+    <footer class="footer mt-auto py-3 bg-dark text-white">
+        <div class="container text-center">
+            <span>&copy; 2024 Tienda de Bolsos</span>
+        </div>
+    </footer>
+
+    <script>
+        function filterBags(type) {
+            let bags = document.querySelectorAll('.bags-row .col-md-4');
+            bags.forEach(bag => {
+                if (bag.classList.contains(type)) {
+                    bag.style.display = 'block';
+                } else {
+                    bag.style.display = 'none';
+                }
+            });
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
